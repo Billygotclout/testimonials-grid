@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+main {
+  display: grid;
+  margin: 4rem;
+  grid-template-areas:
+    "header header header header main  footer"
+    "right menu menu menu menu   footer";
+  gap: 10px;
+}
+section {
+  border-radius: 5px;
+  color: hsl(0, 0%, 81%);
+  box-shadow: 5px 5px 30px 5px hsl(0, 0%, 81%);
+}
+
+img {
+  border-radius: 50%;
+}
+.grid-card-1 {
+  grid-area: header;
+}
+.grid-card-2 {
+  grid-area: main;
+}
+.grid-card-3 {
+  grid-area: right;
+}
+.grid-card-4 {
+  grid-area: menu;
+}
+.grid-card-5 {
+  grid-area: footer;
+}
+/*  || GRID CARD 1 */
+.grid-card-1 {
+  background-color: hsl(263, 55%, 52%);
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.user-details {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  margin-top: 20px;
+}
+.grid-card-1 p {
+  margin-bottom: 20px;
+}
+.name {
+  /* color: white; */
+  font-size: 15px;
+}
+.bold {
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ctext {
+  padding-left: 10px;
+}
+.ctext P {
+  font-size: 13px;
+}
+
+.quote {
+  width: 10%;
+  height: auto;
+  z-index: 0;
+}
+/*  || GRID CARD 2 */
+.grid-card-2 {
+  background-color: hsl(217, 19%, 35%);
+  padding: 20px;
+}
+.user-details-2 {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  margin-top: 20px;
+}
+.user-details-2 img {
+  width: 10%;
+}
+/*  || GRID CARD 3 */
+.grid-card-3 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+.grid-card-3 {
+  color: hsl(217, 19%, 35%);
+  padding: 10px;
+  color: hsl(217, 19%, 35%);
+}
+.grid-card-3 .bold {
+  color: inherit;
+}
+.user-details-3 {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  margin-top: 20px;
+}
+.user-details-3 img {
+  width: 20%;
+}
+.user-details-3 .ctext p {
+  color: hsl(0, 0%, 81%);
+}
+
+/*  || GRID CARD 4 */
+.grid-card-4 {
+  background-color: hsl(219, 29%, 14%);
+  padding: 20px;
+}
+/*  || GRID CARD 5 */
+.grid-card-5 {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+}
+
+@media(max-width: 600px) {
+  main {
+    grid-template-areas:
+      "header header header header header header"
+      "main main main main main main" "right right right right right right" "menu menu menu menu menu menu" "footer footer footer footer footer footer";
+  }
+}
